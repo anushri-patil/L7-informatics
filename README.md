@@ -27,11 +27,39 @@ Steps to run application:
 ```bash
 git clone https://github.com/anushri-patil/L7-informatics
 cd L7_informatics
+```
 
-### 2. Create a virtual environment
-Create a virtual environment to manage dependencies:
+### 2. Create a virtual environment:
 ```bash
 python -m venv venv
+```
+
+### 3. Activate the virtual environment
+For Windows:
+```bash
+venv\Scripts\activate
+```
+
+### 4. Install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Apply migrations
+Set up the database by applying the migrations:
+```bash
+python manage.py migrate
+```
+
+### 6. Run the application
+Start the development server:
+```bash
+python manage.py runserver
+```
+
+### 7. Access the application
+Open your browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the application.
+
 
 
 
