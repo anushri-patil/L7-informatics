@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Add New Flavor</title>
+    <title>Update Flavor</title>
     <script>
         function showAlert(message) {
             alert(message);
@@ -10,7 +10,7 @@
     </script>
 </head>
 <body>
-    <h1>Add New Flavor</h1>
+    <h1>Update Flavor</h1>
     {% if error %}
         <script>
             showAlert("{{ error|escapejs }}");
@@ -19,10 +19,10 @@
     <form method="post">
         {% csrf_token %}
         <label for="name">Flavor Name</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" name="name" value="{{ flavor.name }}"><br><br>
 
         <label for="season">Season</label>
-        <input type="text" id="season" name="season"><br><br>
+        <input type="text" id="season" name="season" value="{{ flavor.season }}"><br><br>
 
         <button type="submit">Add Flavor</button>
     </form>
