@@ -60,6 +60,21 @@ python manage.py runserver
 ### 7. Access the application
 Open your browser and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the application.
 
+### 8. Access the Django Admin Interface
+To manage the application (add, update, or delete flavors and ingredients), you need to log in to the Django admin interface.
+
+#### 8.1. Create a superuser (admin) account
+Run the following command to create an admin user:
+```bash
+python manage.py createsuperuser
+```
+enter a username, email address, and password.
+#### 8.2. Log in to the Admin Interface
+[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
+
+
+
 
 
 
