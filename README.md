@@ -20,3 +20,20 @@ This is a Django web application for a fictional Chocolate House that manages se
 - Add and view customer suggestions for new flavors.
 - If no allergy concern is provided, it defaults to "No allergy concerns."
 
+
+Steps to run application:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/anushri-patil/L7-informatics
+cd L7_informatics
+
+### 2. Create a virtual environment
+Create a virtual environment to manage dependencies:
+```bash
+python -m venv venv
+
+
+
+
+
