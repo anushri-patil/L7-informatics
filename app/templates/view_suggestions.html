@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Suggestions</title>
+</head>
+<body>
+    <h1>Customer Suggestions</h1>
+    <ul>
+        {% for suggestion in suggestions %}
+        <li>
+            {{ suggestion.flavor_suggestion }} 
+            (Allergy Concern: {{ suggestion.allergy_concern }})
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'add_suggestion' %}">Add New Suggestion</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Ingredient</title>
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <h1>Update Ingredient</h1>
+    {% if error %}
+        <script>
+            showAlert("{{ error|escapejs }}");
+        </script>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Ingredient Name</label>
+        <input type="text" id="name" name="name" value="{{ ingredient.name }}"><br><br>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" value="{{ ingredient.quantity }}"><br><br>
+
+        <button type="submit">Update Ingredient</button>
+    </form>
+</body>
+</html>
+

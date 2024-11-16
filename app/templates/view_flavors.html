@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Flavors</title>
+</head>
+<body>
+    <h1>Flavors</h1>
+    <ul>
+        {% for flavor in flavors %}
+        <li>
+            {{ flavor.name }} (Season: {{ flavor.season }}) 
+            <a href="{% url 'update_flavor' flavor.id %}">Update</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'add_flavor' %}">Add New Flavor</a>
+</body>
+</html>

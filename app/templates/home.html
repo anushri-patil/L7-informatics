@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chocolate House</title>
+</head>
+<body>
+    <h1>The Chocolate House 🍫</h1>
+    
+    <h2>Seasonal Flavors</h2>
+    <a href="{% url 'add_flavor' %}">Add New Flavor </a><br>
+    <a href="{% url 'view_flavors' %}">View Flavors</a><br><br>
+
+    <h2>Ingredients</h2>
+    <a href="{% url 'add_ingredient' %}">Add New Ingredient</a><br>
+    <a href="{% url 'view_ingredients' %}">View Ingredients</a><br><br>
+
+    <h2>Customer Suggestions</h2>
+    <a href="{% url 'add_suggestion' %}">Submit Suggestion</a><br>
+    <a href="{% url 'view_suggestions' %}">View Suggestions</a>
+</body>
+</html>
